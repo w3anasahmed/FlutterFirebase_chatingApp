@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "447915689969",
+    "project_id": "flutter-chating-app-9fcc9",
+    "storage_bucket": "flutter-chating-app-9fcc9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447915689969:android:92dfd6190c6c30c6076650",
+        "android_client_info": {
+          "package_name": "com.example.chating_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuqBqeumWlt50WPwZQ4zZgVNarUIV9GEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
