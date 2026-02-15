@@ -1,15 +1,15 @@
 import 'package:chating_app/components/custom_button.dart';
 import 'package:chating_app/components/custom_textfield.dart';
-import 'package:chating_app/service/auth_service.dart';
+import 'package:chating_app/service/auth/auth_service.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-  void Function()? onTap;
+  final void Function()? onTap;
   LoginPage({super.key, required this.onTap});
 
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _pwController = TextEditingController();
-  AuthService _authService = AuthService();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _pwController = TextEditingController();
+  final AuthService _authService = AuthService();
   void login(BuildContext context) async {
     try {
       await _authService.signIn(_emailController.text, _pwController.text);

@@ -1,17 +1,17 @@
 import 'package:chating_app/components/custom_button.dart';
 import 'package:chating_app/components/custom_textfield.dart';
-import 'package:chating_app/service/auth_service.dart';
+import 'package:chating_app/service/auth/auth_service.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatelessWidget {
-  void Function()? onTap;
+  final void Function()? onTap;
   RegisterPage({super.key, required this.onTap});
 
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _pwController = TextEditingController();
-  TextEditingController _confirmPwController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _pwController = TextEditingController();
+  final TextEditingController _confirmPwController = TextEditingController();
 
-  AuthService _authService = AuthService();
+  final AuthService _authService = AuthService();
   void register(BuildContext context) async {
     if (_pwController.text != _confirmPwController.text) {
       ScaffoldMessenger.of(

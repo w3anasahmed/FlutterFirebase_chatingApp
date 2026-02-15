@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class CustomTextfield extends StatelessWidget {
-  TextEditingController? controller;
-  String hintText;
-  bool obscureText;
+  final TextEditingController? controller;
+  final String hintText;
+  final bool obscureText;
 
-  CustomTextfield({
+  const CustomTextfield({
     super.key,
     required this.controller,
     required this.hintText,

@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:chating_app/screeens/login_page.dart';
 import 'package:chating_app/screeens/register_page.dart';
 import 'package:flutter/material.dart';
